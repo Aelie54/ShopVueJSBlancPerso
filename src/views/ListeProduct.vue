@@ -3,7 +3,7 @@
     <li v-for="articles in produit" :key="articles.title">
       <form @submit.prevent="addArticle(articles)">
         <p>
-          {{ articles.id }} {{ articles.title }} {{ articles.price }}
+          {{ articles.title }} {{ articles.price }}
           {{ articles.currency }}
         </p>
         <input type="number" min="0" v-model="articles.quantity" :id="articles.id" />
